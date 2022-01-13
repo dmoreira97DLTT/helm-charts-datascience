@@ -42,4 +42,13 @@ entries:
     urls:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/ubuntu-4.2.1/ubuntu-4.2.1.tgz
     version: 4.2.1
+  library-chart:
+  - apiVersion: v2
+    created: "2022-01-13T17:32:18.5697641Z"
+    digest: 6b12aa0b8df2e1a030bea9a84ab5cc4a137c6a5772c0174d402686d34fb3922f
+    name: library-chart
+    type: library
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/library-chart-2.0.16/library-chart-2.0.16.tgz
+    version: 2.0.16
 generated: "2022-01-13T11:30:55.3974586Z"
