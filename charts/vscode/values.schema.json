@@ -363,27 +363,22 @@
       }
   },
   "tags": {
-    "title": "Tags",
     "description": "Configuration of resource tags (labels)",
     "type": "object",
     "properties": {
       "ultag1": {      
-          "description": "resource tag",
+          "description": "resource tag number 1",
           "type": "string",
-          "x-form": {
-              "value": "ul-"
-          },
+          "default": "",
           "hidden": {
               "value": false,
               "path": "tags/enabled"
           }
       },
       "ultag2": {
-          "description": "resource tag",
+          "description": "resource tag number 2",
           "type": "string",
-          "x-form": {
-              "value": "ul-"
-          },
+          "default": "",
           "hidden": {
               "value": false,
               "path": "tags/enabled"
