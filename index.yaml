@@ -20,7 +20,7 @@ entries:
     - https://github.com/cdr/code-server
     type: application
     urls:
-    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/vscode-4.4.3/vscode-4.4.4.tgz
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/vscode-4.4.3/vscode-4.4.3.tgz
     version: 4.4.3
   ubuntu:
   - apiVersion: v2
