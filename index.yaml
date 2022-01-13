@@ -22,4 +22,24 @@ entries:
     urls:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/vscode-4.4.3/vscode-4.4.3.tgz
     version: 4.4.3
+  ubuntu:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-01-13T15:07:24.382315Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-datascience
+      version: 2.0.0
+    description: Ubuntu with a graphical user interface.
+    digest: f5786108b5e3ce6235dce93e32ad9a6367d7dea7c28077728338e2c82c1d569d
+    home: https://www.ubuntu-fr.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/ubuntu.png
+    name: ubuntu
+    sources:
+    - https://github.com/InseeFrLab/ubuntu-vnc
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/ubuntu
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/ubuntu-4.2.1/ubuntu-4.2.1.tgz
+    version: 4.2.1
 generated: "2022-01-13T11:30:55.3974586Z"
