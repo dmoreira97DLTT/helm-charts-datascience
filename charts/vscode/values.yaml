@@ -156,4 +156,7 @@ tolerations: []
 
 affinity: {}
 
-tags: {}
+tags:
+  enabled: true
+  ultag1: ""
+  ultag2: ""
