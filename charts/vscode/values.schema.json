@@ -369,20 +369,12 @@
       "ultag1": {      
           "description": "resource tag number 1",
           "type": "string",
-          "default": "",
-          "hidden": {
-              "value": false,
-              "path": "tags/enabled"
-          }
+          "default": ""
       },
       "ultag2": {
           "description": "resource tag number 2",
           "type": "string",
-          "default": "",
-          "hidden": {
-              "value": false,
-              "path": "tags/enabled"
-          }
+          "default": ""
       }
     }
 },
