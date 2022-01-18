@@ -362,22 +362,6 @@
           }
       }
   },
-  "tags": {
-    "description": "Configuration of resource tags (labels)",
-    "type": "object",
-    "properties": {
-      "ultag1": {      
-          "description": "resource tag number 1",
-          "type": "string",
-          "default": ""
-      },
-      "ultag2": {
-          "description": "resource tag number 2",
-          "type": "string",
-          "default": ""
-      }
-    }
-},
   "s3": {
       "description": "Configuration of temporary identity",
       "type": "object",
@@ -489,6 +473,27 @@
           "type": "string",
           "description": "args for initialization script",
           "default": ""
+        }
+      }
+    },
+    "tags": {
+      "description": "Configuration of resource tags (labels)",
+      "type": "object",
+      "properties": {
+        "filtertag1": {      
+            "description": "resource tag number 1",
+            "type": "string",
+            "default": ""
+        },
+        "filtertag2": {
+            "description": "resource tag number 2",
+            "type": "string",
+            "default": ""
+        },
+        "filtertag3": {
+            "description": "resource tag number 3",
+            "type": "string",
+            "default": ""
         }
       }
     }

@@ -7,8 +7,6 @@ metadata:
   name: {{ include "library-chart.fullname" . }}
   labels:
     {{- include "library-chart.labels" . | nindent 4 }}
-    ultag1: {{ .Values.tags.ultag1 }}
-    ultag2: {{ .Values.tags.ultag2 }}
 spec:
 {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}

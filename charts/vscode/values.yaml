@@ -158,6 +158,6 @@ affinity: {}
 
 tags:
   enabled: true
-  ultag1: ""
-  ultag2: ""
-
+  filtertag1: ""
+  filtertag2: ""
+  filtertag3: ""
