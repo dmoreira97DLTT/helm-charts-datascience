@@ -3,6 +3,29 @@ entries:
   argo-cd:
   - apiVersion: v2
     appVersion: "1"
+    created: "2022-01-18T16:23:28.315217301Z"
+    dependencies:
+    - enabled: true
+      name: argo-cd
+      repository: https://argoproj.github.io/argo-helm
+      version: 3.29.4
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
+    digest: 1144d4d10d1176b93c1d135ff2b90cd5b429c7ab73346ee456586ac3c42462d4
+    home: https://argo-cd.readthedocs.io/en/stable/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/argo.png
+    name: argo-cd
+    sources:
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/argo-cd
+    - https://github.com/argoproj/argo-helm/tree/master/charts/argo-cd
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/argo-cd-2.0.1/argo-cd-2.0.1.tgz
+    version: 2.0.1
+  - apiVersion: v2
+    appVersion: "1"
     created: "2022-01-18T11:52:28.480535146Z"
     dependencies:
     - enabled: true
@@ -25,6 +48,29 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/argo-cd-1.2.3/argo-cd-1.2.3.tgz
     version: 1.2.3
   argo-workflows:
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-01-18T16:23:28.447676595Z"
+    dependencies:
+    - enabled: true
+      name: argo-workflows
+      repository: https://argoproj.github.io/argo-helm
+      version: 0.8.1
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes.
+    digest: 177f2cbb5d4d39dc3e016e385ca603b3ad27e7b6e3a231cdd47085f2e25b5058
+    home: https://argoproj.github.io/argo-workflows/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/argo.png
+    name: argo-workflows
+    sources:
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/argo-workflows
+    - https://github.com/argoproj/argo-helm/tree/master/charts/argo-workflows
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/argo-workflows-2.0.1/argo-workflows-2.0.1.tgz
+    version: 2.0.1
   - apiVersion: v2
     appVersion: "1"
     created: "2022-01-18T11:52:28.600852125Z"
@@ -51,6 +97,26 @@ entries:
   blazingsql:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-01-18T16:23:28.575296048Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: BlazingSQL provides a high-performance distributed SQL engine in Python. Built on the RAPIDS GPU data science ecosystem, ETL massive datasets on GPUs.
+    digest: f909356668077fd44a2fd760051de8a3a9d3c63afc0a2f45d8143bfd1b63ba6d
+    home: https://blazingsql.com/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/blazingsql.png
+    name: blazingsql
+    sources:
+    - https://github.com/InseeFrLab/blazingsql
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/blazingsql
+    - https://github.com/BlazingDB/blazingsql
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/blazingsql-4.0.3/blazingsql-4.0.3.tgz
+    version: 4.0.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-01-18T11:52:28.725500042Z"
     dependencies:
     - name: library-chart
@@ -72,6 +138,25 @@ entries:
   cloudshell:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-01-18T16:23:28.699846576Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Datalab  shell (ubuntu with webssh)
+    digest: a7184187c21f2e293861f85840499a0890392da5f8766486cfdd3cc4d1910ce4
+    home: https://datalab.sspcloud.fr
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/Onyxia.png
+    name: cloudshell
+    sources:
+    - https://github.com/InseeFrLab/shelly
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/cloudshell
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/cloudshell-4.0.2/cloudshell-4.0.2.tgz
+    version: 4.0.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-01-18T11:52:28.838694356Z"
     dependencies:
     - name: library-chart
@@ -90,6 +175,30 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/cloudshell-3.3.1/cloudshell-3.3.1.tgz
     version: 3.3.1
   dask:
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-01-18T16:23:28.829268444Z"
+    dependencies:
+    - enabled: true
+      name: dask
+      repository: https://helm.dask.org/
+      version: 2021.11.1
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Dask natively scales Python
+    digest: 93d8911daf4b601774bc1aea96cd5bb34bc15b2248fd64577da104381bb0db3d
+    home: https://dask.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/dask.png
+    name: dask
+    sources:
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/dask
+    - https://github.com/dask/helm-chart
+    - https://github.com/dask/dask
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/dask-2.0.1/dask-2.0.1.tgz
+    version: 2.0.1
   - apiVersion: v2
     appVersion: "1"
     created: "2022-01-18T11:52:28.959125535Z"
@@ -117,6 +226,24 @@ entries:
   delta-sharing-server:
   - apiVersion: v2
     appVersion: "1"
+    created: "2022-01-18T16:23:28.980884603Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: The Delta Sharing Reference Server is a reference implementation server for the Delta Sharing Protocol. This can be used to set up a small service to test your own connector that implements the Delta Sharing Protocol.
+    digest: c7ebc72cada7e504d881d8e8cf53a76e066075ca74873e5fe88747456008d720
+    home: https://github.com/delta-io/delta-sharing
+    icon: https://user-images.githubusercontent.com/1000778/137567793-28ba7099-66fe-4d77-be50-bcee444a2017.png
+    name: delta-sharing-server
+    sources:
+    - https://github.com/delta-io/delta-sharing
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/delta-sharing-server-1.0.1/delta-sharing-server-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: "1"
     created: "2022-01-18T11:52:29.067581007Z"
     dependencies:
     - name: library-chart
@@ -134,6 +261,33 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/delta-sharing-server-0.0.4/delta-sharing-server-0.0.4.tgz
     version: 0.0.4
   elastic:
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-01-18T16:23:29.110294575Z"
+    dependencies:
+    - enabled: true
+      name: elasticsearch
+      repository: https://helm.elastic.co
+      version: 7.13.4
+    - enabled: true
+      name: kibana
+      repository: https://helm.elastic.co
+      version: 7.13.4
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents
+    digest: 49ad21c9e67f0fa19d1c954999f20311b55e75966a80f0985100c70d5ac4f73b
+    home: https://www.elastic.co/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/elk.png
+    name: elastic
+    sources:
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/elastic
+    - https://github.com/elastic/helm-charts/tree/master/elasticsearch
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/elastic-2.0.1/elastic-2.0.1.tgz
+    version: 2.0.1
   - apiVersion: v2
     appVersion: "1"
     created: "2022-01-18T11:52:29.180386118Z"
@@ -162,6 +316,26 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/elastic-1.1.1/elastic-1.1.1.tgz
     version: 1.1.1
   fastai:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-01-18T16:23:29.231455011Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: fastai is a deep learning library which provides practitioners with high-level components that can quickly and easily provide state-of-the-art results in standard deep learning domains, and provides researchers with low-level components that can be mixed and matched to build new approaches.
+    digest: 91d35b790aff2f11fb4b926297de94e9082a191412c10f4623aec88185c53b0a
+    home: https://www.fast.ai/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/fastai.png
+    name: fastai
+    sources:
+    - https://github.com/InseeFrLab/fastai
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/fastai
+    - https://github.com/fastai/docker-containers
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/fastai-6.0.2/fastai-6.0.2.tgz
+    version: 6.0.2
   - apiVersion: v2
     appVersion: latest
     created: "2022-01-18T11:52:29.296622759Z"
@@ -209,6 +383,25 @@ entries:
   jena:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-01-18T16:23:29.487632743Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Apache Jena Fuseki is a SPARQL server.
+    digest: 971ea1207042c3091a22ccffd094bd3815e587cf78d4818ad49c38d847f28049
+    home: https://jena.apache.org/jena
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jena.png
+    name: jena
+    sources:
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jena
+    - https://github.com/stain/jena-docker
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/jena-3.0.1/jena-3.0.1.tgz
+    version: 3.0.1
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-01-18T11:52:29.535884504Z"
     dependencies:
     - name: library-chart
@@ -227,6 +420,26 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/jena-2.2.1/jena-2.2.1.tgz
     version: 2.2.1
   jupyter:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-01-18T16:23:29.59349581Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.18
+    description: Jupyter is a notebook accessible through a web browser. You can use it for Python and Spark.
+    digest: 6e2037aaebf03c58b62c8a726ac520ad2c76b0f691e4bad84d1ef27533f88835
+    home: https://jupyter.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/jupyter.png
+    name: jupyter
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/jupyter
+    - https://github.com/jupyter/docker-stacks
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/jupyter-6.0.4/jupyter-6.0.4.tgz
+    version: 6.0.4
   - apiVersion: v2
     appVersion: latest
     created: "2022-01-18T11:52:29.648885116Z"
@@ -275,6 +488,28 @@ entries:
   label-studio:
   - apiVersion: v2
     appVersion: "1"
+    created: "2022-01-18T16:23:29.851927652Z"
+    dependencies:
+    - enabled: true
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.3.14
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Data Science starts with data. Label Studio removes the pain of labeling it.
+    digest: b9366b3920c7d95fc74a4f4a1f606c5921b123957bd3da0fdf8f229b78a232c2
+    home: https://labelstud.io/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/labelStudio.png
+    name: label-studio
+    sources:
+    - https://github.com/heartexlabs/label-studio
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/label-studio-2.0.2/label-studio-2.0.2.tgz
+    version: 2.0.2
+  - apiVersion: v2
+    appVersion: "1"
     created: "2022-01-18T11:52:29.905001911Z"
     dependencies:
     - enabled: true
@@ -297,6 +532,14 @@ entries:
     version: 1.1.1
   library-chart:
   - apiVersion: v2
+    created: "2022-01-18T16:23:29.969917574Z"
+    digest: 2c74afb6bf111cd999bb90c6f89117278621eb9e584fc54b3b8c263d2da469f6
+    name: library-chart
+    type: library
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/library-chart-2.0.19/library-chart-2.0.19.tgz
+    version: 2.0.19
+  - apiVersion: v2
     created: "2022-01-18T11:52:30.036454089Z"
     digest: 69999df0597a15c9f47a6795066eca7973ee2b29e71f1977c257064625d1241e
     name: library-chart
@@ -313,6 +556,29 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/library-chart-2.0.17/library-chart-2.0.17.tgz
     version: 2.0.17
   mlflow:
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-01-18T16:23:30.108297085Z"
+    dependencies:
+    - enabled: true
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.3.14
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry.
+    digest: 596c7197d7f7c5271682e32daed6cb931ab6f72e0d0e44fd9ab250ff40ec21b4
+    home: https://mlflow.org
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/mlflow.png
+    name: mlflow
+    sources:
+    - https://github.com/InseeFrLab/mlflow
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/mlflow
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/mlflow-3.0.1/mlflow-3.0.1.tgz
+    version: 3.0.1
   - apiVersion: v2
     appVersion: "1"
     created: "2022-01-18T11:52:30.157331372Z"
@@ -364,6 +630,25 @@ entries:
   neo4j:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-01-18T16:23:30.374477361Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Neo4j is a graph database management system developed by Neo4j, Inc. Described by its developers as an ACID-compliant transactional database with native graph storage and processing.
+    digest: d2a4b01bab908724868b7e369d4db926c4af6aaf95da4ebfc9cf6da5c5b10b0b
+    home: https://neo4j.com/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/neo4j.png
+    name: neo4j
+    sources:
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/neo4j
+    - https://github.com/neo4j/docker-neo4j-publish
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/neo4j-3.0.2/neo4j-3.0.2.tgz
+    version: 3.0.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-01-18T11:52:30.388526835Z"
     dependencies:
     - name: library-chart
@@ -384,6 +669,25 @@ entries:
   openrefine:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-01-18T16:23:30.483802844Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: OpenRefine (previously Google Refine) is a powerful tool for working with messy data, cleaning it; transforming it from one format into another; and extending it with web services and external data.
+    digest: feaf020839a0ef5e6434788485a964b78016ef1fde590fe01eb1cdf3b0a7ff1f
+    home: https://openrefine.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/openrefine.png
+    name: openrefine
+    sources:
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/openrefine
+    - https://github.com/vimagick/dockerfiles/blob/master/openrefine/Dockerfile
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/openrefine-3.0.2/openrefine-3.0.2.tgz
+    version: 3.0.2
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-01-18T11:52:30.548396268Z"
     dependencies:
     - name: library-chart
@@ -402,6 +706,24 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/openrefine-2.2.1/openrefine-2.2.1.tgz
     version: 2.2.1
   pgadmin:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-01-18T16:23:30.610052202Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: pgAdmin is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world.
+    digest: 88bc7bfb90c9a522d8ecd9181e05a03c44ddd5434fc326f659fb1f1fa7e729ea
+    home: https://www.pgadmin.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/post.png
+    name: pgadmin
+    sources:
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/pgadmin
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/pgadmin-3.0.2/pgadmin-3.0.2.tgz
+    version: 3.0.2
   - apiVersion: v2
     appVersion: latest
     created: "2022-01-18T11:52:30.652605728Z"
@@ -464,6 +786,26 @@ entries:
   rapidsai:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-01-18T16:23:30.956666134Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: RAPIDS is a software and API library giving you the ability to run end-to-end data science and analytics pipelines entirely on GPUs. You can use it for spark.
+    digest: 6d895b4948dc9cdf979143c3404adde2c09385572b1bec355d643de28acd85f7
+    home: https://rapids.ai/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/rapidsai.png
+    name: rapidsai
+    sources:
+    - https://github.com/InseeFrLab/rapidsai
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/rapidsai
+    - https://github.com/rapidsai/docker
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/rapidsai-6.0.3/rapidsai-6.0.3.tgz
+    version: 6.0.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-01-18T11:52:31.024727028Z"
     dependencies:
     - name: library-chart
@@ -483,6 +825,34 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/rapidsai-5.0.6/rapidsai-5.0.6.tgz
     version: 5.0.6
   redash:
+  - apiVersion: v2
+    appVersion: "1"
+    created: "2022-01-18T16:23:31.097317255Z"
+    dependencies:
+    - enabled: true
+      name: redash
+      repository: https://getredash.github.io/contrib-helm-chart/
+      version: 2.3.0
+    - enabled: true
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.3.14
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Redash is an open source tool built for teams to query, visualize and collaborate.
+    digest: 9be899e6acc3715ecd2b74a58cbd7c9b815fce2da620ee8570abb637256991b3
+    home: https://redash.io/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/redash.png
+    name: redash
+    sources:
+    - https://github.com/InseeFrLab/redash
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/redash
+    - https://github.com/getredash/redash
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/redash-2.0.1/redash-2.0.1.tgz
+    version: 2.0.1
   - apiVersion: v2
     appVersion: "1"
     created: "2022-01-18T11:52:31.163150002Z"
@@ -513,6 +883,25 @@ entries:
     version: 1.0.7
   rstudio:
   - apiVersion: v2
+    created: "2022-01-18T16:23:31.231386347Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: R Studio is the reference environment / IDE for programming with R, a programming language used for data processing and statistical analysis. You can use it for spark.
+    digest: 07394204163805716414d1a7d21bc00bd9196a73028bc1785bc35f00b2639161
+    home: https://www.rstudio.com/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/rstudio.png
+    name: rstudio
+    sources:
+    - https://github.com/InseeFrLab/rstudio
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/rstudio
+    - https://github.com/rocker-org/rocker
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/rstudio-6.0.3/rstudio-6.0.3.tgz
+    version: 6.0.3
+  - apiVersion: v2
     created: "2022-01-18T11:52:31.284849774Z"
     dependencies:
     - name: library-chart
@@ -532,6 +921,25 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/rstudio-5.3.12/rstudio-5.3.12.tgz
     version: 5.3.12
   spark-history:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-01-18T16:23:31.35187288Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Spark history help you to review logs of your spark applications.
+    digest: c7416bd14ffef7aef6cbd9eabf3eb04f8e30758f85a679612416818372df1b07
+    home: https://spark.apache.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/spark.png
+    name: spark-history
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/spark-history
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/spark-history-4.0.2/spark-history-4.0.2.tgz
+    version: 4.0.2
   - apiVersion: v2
     appVersion: latest
     created: "2022-01-18T11:52:31.402115092Z"
@@ -554,6 +962,25 @@ entries:
   spark-thrift-server:
   - apiVersion: v2
     appVersion: "1"
+    created: "2022-01-18T16:23:31.474771623Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Spark SQL can also act as a distributed query engine using its JDBC/ODBC or command-line interface. In this mode, end-users or applications can interact with Spark SQL directly to run SQL queries, without the need to write any code. The Thrift JDBC/ODBC server implemented here corresponds to the HiveServer2 in built-in Hive.
+    digest: 0a8a02b55cedbaaa77f8aa97fce859ca05a7710720e21db4593abc8380a9895f
+    home: https://spark.apache.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/spark.png
+    name: spark-thrift-server
+    sources:
+    - https://github.com/InseeFrLab/jupyter-datascience
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/spark-thrift-server
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/spark-thrift-server-3.0.2/spark-thrift-server-3.0.2.tgz
+    version: 3.0.2
+  - apiVersion: v2
+    appVersion: "1"
     created: "2022-01-18T11:52:31.504244727Z"
     dependencies:
     - name: library-chart
@@ -572,6 +999,25 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/spark-thrift-server-2.0.6/spark-thrift-server-2.0.6.tgz
     version: 2.0.6
   tensorflow:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-01-18T16:23:31.606552005Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: TensorFlow is a software library dedicated to machine learning. Easily develop, train, and deploy models with Python.
+    digest: 3503d2989559ec9508b14614bdc848b134ca8ffc4e78c0079f083a6f90773995
+    home: https://www.tensorflow.org/
+    icon: https://www.silicon.fr/wp-content/uploads/2019/10/TensorFlow_.png
+    name: tensorflow
+    sources:
+    - https://github.com/InseeFrLab/tensorflow
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/tensorflow
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/tensorflow-4.0.3/tensorflow-4.0.3.tgz
+    version: 4.0.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-01-18T11:52:31.608648089Z"
@@ -594,6 +1040,25 @@ entries:
   trino:
   - apiVersion: v2
     appVersion: "355"
+    created: "2022-01-18T16:23:31.726788736Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Fast distributed SQL query engine for big data analytics
+    digest: 1da1542c5745c5c8347de4a11840bccafa2feeaba87aab4d382b257512baeb7f
+    home: https://trino.io/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/trino.png
+    name: trino
+    sources:
+    - https://github.com/trinodb/charts
+    - https://github.com/trinodb/trino/tree/master/core/docker
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/trino-2.0.2/trino-2.0.2.tgz
+    version: 2.0.2
+  - apiVersion: v2
+    appVersion: "355"
     created: "2022-01-18T11:52:31.714962275Z"
     dependencies:
     - name: library-chart
@@ -614,6 +1079,25 @@ entries:
   ubuntu:
   - apiVersion: v2
     appVersion: latest
+    created: "2022-01-18T16:23:31.851046285Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Ubuntu with a graphical user interface.
+    digest: 7f7cbce3a0d8b92247bc960d75e2f846fbb6773eae5eb18c99ba9039a1e55413
+    home: https://www.ubuntu-fr.org/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/ubuntu.png
+    name: ubuntu
+    sources:
+    - https://github.com/InseeFrLab/ubuntu-vnc
+    - https://github.com/InseeFrLab/helm-charts-datascience/tree/master/charts/ubuntu
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/ubuntu-5.0.3/ubuntu-5.0.3.tgz
+    version: 5.0.3
+  - apiVersion: v2
+    appVersion: latest
     created: "2022-01-13T15:07:24.382315Z"
     dependencies:
     - name: library-chart
@@ -632,6 +1116,26 @@ entries:
     - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/ubuntu-4.2.1/ubuntu-4.2.1.tgz
     version: 4.2.1
   vscode:
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-01-18T16:23:31.976413439Z"
+    dependencies:
+    - name: library-chart
+      repository: https://dmoreira97DLTT.github.io/helm-charts-datascience
+      version: 2.0.17
+    description: Visual Studio Code is a lightweight yet powerful source code editor with a rich ecosystem of extensions for many languages.
+    digest: 431170627102b22b106ff479f6eb702c881bee50aa452f2a56e1c27d9a95529e
+    home: https://code.visualstudio.com/
+    icon: https://minio.lab.sspcloud.fr/projet-onyxia/assets/servicesImg/vscode.png
+    name: vscode
+    sources:
+    - https://github.com/dmoreira97DLTT/vscode
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/tree/master/charts/vscode
+    - https://github.com/cdr/code-server
+    type: application
+    urls:
+    - https://github.com/dmoreira97DLTT/helm-charts-datascience/releases/download/vscode-5.0.3/vscode-5.0.3.tgz
+    version: 5.0.3
   - apiVersion: v2
     appVersion: latest
     created: "2022-01-13T11:30:55.3984589Z"
